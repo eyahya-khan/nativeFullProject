@@ -1,4 +1,4 @@
-import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { StyleSheet, Text, TouchableOpacity, View, Image } from "react-native";
 import React from "react";
 import { useNavigation } from "@react-navigation/native";
 
@@ -10,25 +10,34 @@ const Menu = () => {
         style={styles.buttonStyle}
         onPress={() => navigation.navigate("About")}
       >
-        <Text>about</Text>
+        {/* <Text>about</Text> */}
+        <Image 
+        style={styles.iconStyle}
+        source={require("../../assets/about.png")}/>
       </TouchableOpacity>
       <TouchableOpacity
         style={styles.buttonStyle}
         onPress={() => navigation.navigate("Course")}
       >
-        <Text>Course</Text>
+        <Image 
+        style={styles.iconStyle}
+        source={require("../../assets/course.png")}/>
       </TouchableOpacity>
       <TouchableOpacity
         style={styles.buttonStyle}
         onPress={() => navigation.navigate("User")}
       >
-        <Text>Student Data</Text>
+        <Image 
+        style={styles.iconStyle}
+        source={require("../../assets/group.png")}/>
       </TouchableOpacity>
       <TouchableOpacity
         style={styles.buttonStyle}
         onPress={() => navigation.navigate("Contact")}
       >
-        <Text>Contact</Text>
+        <Image 
+        style={styles.iconStyle}
+        source={require("../../assets/contact.png")}/>
       </TouchableOpacity>
     </View>
   );
@@ -40,6 +49,11 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
     alignItems: "center",
   },
+  iconStyle:{
+    width: "100%",
+    height: 50,
+    aspectRatio: 1,
+  }
 });
 
 export default Menu;
