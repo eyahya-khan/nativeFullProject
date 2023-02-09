@@ -12,13 +12,22 @@ const Home = (props) => {
           style={styles.headerImage}
           source={require("../../assets/homeImage.jpeg")}
         />
-      <Text style={styles.mainHeader}>Welcome to </Text>
-      <Text style={[styles.mainHeader, { fontSize: 30, color: "#4c5dab", marginTop:0 }]}>
-        {props.channelName}
-      </Text>
-      <Text style={styles.paraStyle}>{description} </Text>
+        <Text style={styles.mainHeader}>Welcome to </Text>
+        <Text
+          style={[
+            styles.mainHeader,
+            { fontSize: 30, color: "#4c5dab", marginTop: 0 },
+          ]}
+        >
+          {props.channelName}
+        </Text>
+        <Text style={styles.paraStyle}>{description} </Text>
       </View>
-      <Menu/>
+      <View style={styles.menuStyle}>
+        <View style={styles.lineStyle}></View>
+        <Menu />
+        <View style={[styles.lineStyle, { marginVertical: 10 }]}></View>
+      </View>
     </View>
   );
 };
@@ -43,7 +52,7 @@ const styles = StyleSheet.create({
     fontSize: 25,
     color: "#344055",
     textTransform: "uppercase",
-    marginTop: 10
+    marginTop: 10,
   },
   headerImage: {
     width: "100%",
@@ -52,13 +61,18 @@ const styles = StyleSheet.create({
     display: "flex",
     alignItems: "stretch",
     marginTop: 10,
-    borderRadius: 20
+    borderRadius: 20,
   },
   paraStyle: {
     textAlign: "center",
     fontSize: 16,
     color: "#7d7d7d",
     marginTop: 10,
+  },
+  lineStyle: {
+    marginBottom: 10,
+    borderWidth: 0.5,
+    borderColor: "grey",
   },
 });
 export default Home;

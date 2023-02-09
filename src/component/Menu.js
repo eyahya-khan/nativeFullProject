@@ -6,18 +6,38 @@ const Menu = () => {
   const navigation = useNavigation();
   return (
     <View style={styles.menuContainer}>
-      <TouchableOpacity onPress={() => navigation.navigate("About")}>
+      <TouchableOpacity
+        style={styles.buttonStyle}
+        onPress={() => navigation.navigate("About")}
+      >
         <Text>about</Text>
       </TouchableOpacity>
-      <Text>course</Text>
-      <Text>contact</Text>
+      <TouchableOpacity
+        style={styles.buttonStyle}
+        onPress={() => navigation.navigate("Course")}
+      >
+        <Text>Course</Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        style={styles.buttonStyle}
+        onPress={() => navigation.navigate("User")}
+      >
+        <Text>Student Data</Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        style={styles.buttonStyle}
+        onPress={() => navigation.navigate("Contact")}
+      >
+        <Text>Contact</Text>
+      </TouchableOpacity>
     </View>
   );
 };
 const styles = StyleSheet.create({
   menuContainer: {
     display: "flex",
-    justifyContent: "center",
+    flexDirection: "row",
+    justifyContent: "space-between",
     alignItems: "center",
   },
 });
