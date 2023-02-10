@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Image, TouchableOpacity } from "react-native";
+import { StyleSheet, Text, View, Image, TouchableOpacity, ScrollView } from "react-native";
 import React from "react";
 import { courseApi } from "../API/CourseApi";
 
@@ -6,7 +6,7 @@ const CourseDetails = ({ navigation, route }) => {
   const id = route.params.courseId;
   const selectedCourse = courseApi.find((item) => id === item.id);
   return (
-    <View style={styles.mainContainer}>
+    <ScrollView style={styles.mainContainer}>
       <View style={styles.courseContainer}>
         <View>
           <Image
@@ -17,6 +17,9 @@ const CourseDetails = ({ navigation, route }) => {
         </View>
         <Text style={styles.mainHeader}>{selectedCourse.title}</Text>
         <Text style={styles.description}>{selectedCourse.description}</Text>
+        <Text style={[styles.description,{textAlign:"center"}]}>{selectedCourse.course1}</Text>
+        <Text style={[styles.description,{textAlign:"center"}]}>{selectedCourse.course2}</Text>
+        <Text style={[styles.description,{textAlign:"center"}]}>{selectedCourse.course3}</Text>
         <Text style={styles.mainHeader}>{selectedCourse.price} SEK</Text>
         <View style={styles.buttonContainer}>
           <TouchableOpacity
@@ -27,7 +30,7 @@ const CourseDetails = ({ navigation, route }) => {
           </TouchableOpacity>
         </View>
       </View>
-    </View>
+    </ScrollView>
   );
 };
 const styles = StyleSheet.create({

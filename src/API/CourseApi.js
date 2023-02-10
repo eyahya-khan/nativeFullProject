@@ -5,9 +5,9 @@ export const courseApi = [
     image: require("../../assets/course/web.jpg"),
     description:
       "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor adipiscing elit. ",
-    course1: "html",
-    course2: "css",
-    course3: "javascript",
+    course1: "HTML",
+    course2: "CSS",
+    course3: "JavaScript",
     price: 5000,
   },
   {
@@ -49,9 +49,9 @@ export const courseApi = [
     image: require("../../assets/course/web.jpg"),
     description:
       "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor adipiscing elit. ",
-    course1: "html",
-    course2: "css",
-    course3: "javascript",
+    course1: "HTML",
+    course2: "CSS",
+    course3: "JavaScript",
     price: 5000,
   },
   {
@@ -60,9 +60,9 @@ export const courseApi = [
     image: require("../../assets/course/web.jpg"),
     description:
       "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor adipiscing elit. ",
-    course1: "html",
-    course2: "css",
-    course3: "javascript",
+    course1: "HTML",
+    course2: "CSS",
+    course3: "JavaScript",
     price: 5000,
   },
 ];

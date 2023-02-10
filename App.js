@@ -12,7 +12,13 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Home">
-        <Stack.Screen name="Home">
+        <Stack.Screen name="Home" options={{
+          headerTitleStyle: {
+            fontSize: 25,
+            color: "green"
+          },
+          headerTitleAlign: "center",
+        }}>
           {(props) => <Home {...props} channelName={"Education's World"} />}
         </Stack.Screen>
         <Stack.Screen name="About" component={About}
