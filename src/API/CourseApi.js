@@ -1,4 +1,5 @@
-export const courseApi = [{
+export const courseApi = [
+  {
     id: "1",
     title: "Web Development",
     image: require("../../assets/course/web.jpg"),
@@ -63,4 +64,5 @@ export const courseApi = [{
     course2: "css",
     course3: "javascript",
     price: 5000,
-}]
+  },
+];
