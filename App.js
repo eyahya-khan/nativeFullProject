@@ -15,7 +15,15 @@ export default function App() {
         <Stack.Screen name="Home">
           {(props) => <Home {...props} channelName={"Education's World"} />}
         </Stack.Screen>
-        <Stack.Screen name="About" component={About} />
+        <Stack.Screen name="About" component={About}
+        options={{
+          headerTitleStyle: {
+            fontSize: 25,
+            color: "green"
+          },
+          headerTitleAlign: "center",
+        }}
+        />
         <Stack.Screen name="Course" component={Course} />
         <Stack.Screen name="CourseDetails" component={CourseDetails} />
         <Stack.Screen name="Contact" component={Contact} />
