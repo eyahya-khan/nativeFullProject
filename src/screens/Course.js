@@ -1,11 +1,14 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { FlatList, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
+import { courseApi } from '../API/Course'
 
 const Course = () => {
   return (
-    <View>
-      <Text>Course page</Text>
-    </View>
+    <FlatList
+    key={(item)=> item.id}
+    data = {courseApi}
+    renderItem={courseItem}
+    />
   )
 }
 
