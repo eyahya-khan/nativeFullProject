@@ -53,7 +53,6 @@ const UserData = () => {
   if (!fontsLoaded) {
     <AppLoading />;
   }else{
-
   return (
     <View>
       <Text style={styles.mainHeader}>List of user</Text>
