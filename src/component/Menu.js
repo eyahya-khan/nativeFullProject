@@ -10,7 +10,6 @@ const Menu = () => {
         style={styles.buttonStyle}
         onPress={() => navigation.navigate("About")}
       >
-        {/* <Text>about</Text> */}
         <Image 
         style={styles.iconStyle}
         source={require("../../assets/about.png")}/>
