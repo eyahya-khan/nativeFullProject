@@ -1,6 +1,7 @@
 {
   "expo": {
     "name": "nativeFullProject",
+    "description":"This app covers basic and advanced knowledge",
     "slug": "nativeFullProject",
     "version": "1.0.0",
     "orientation": "portrait",
