@@ -9,11 +9,12 @@ import {
 } from "react-native";
 import React from "react";
 import AppLoading from "expo-app-loading";
-import { useFonts, WorkSans_400Regular } from "@expo-google-fonts/dev";
+import { useFonts, WorkSans_400Regular, Nunito_700Bold } from "@expo-google-fonts/dev";
 
 const About = () => {
   const [fontsLoaded] = useFonts({
     WorkSans_400Regular,
+    Nunito_700Bold,
   });
 
   if (!fontsLoaded) {
@@ -139,7 +140,6 @@ const styles = StyleSheet.create({
     justifyContent: "space-evenly",
     marginTop: 15,
   },
-
   iconStyle: {
     width: "100%",
     height: 50,

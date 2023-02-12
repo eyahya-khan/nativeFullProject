@@ -59,6 +59,7 @@ const UserData = () => {
       <FlatList
         keyExtractor={(item) => item.id}
         data={userData}
+        initialNumToRender={4}
         renderItem={(item) => showUserData(item)}
         horizontal
         showsHorizontalScrollIndicator={false}
