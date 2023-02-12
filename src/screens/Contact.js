@@ -48,6 +48,9 @@ const Contact = ({ navigation }) => {
           <Text style={styles.description}>
             You can reach us anytime via abc@abc.com
           </Text>
+          <Text style={styles.description}>
+            You can reach us anytime via abc@abc.com
+          </Text>
 
           <View style={styles.inputContainer}>
             <Text style={styles.labels}> Enter your name </Text>
