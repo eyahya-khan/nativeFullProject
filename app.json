@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "nativeFullProject",
-    "description": "This app covers React native basic and advanced knowledge",
+    "description": "This app covers basic and advanced knowledge react native",
     "slug": "nativeFullProject",
     "version": "1.0.0",
     "orientation": "portrait",
